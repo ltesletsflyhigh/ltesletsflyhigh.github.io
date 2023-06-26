@@ -1,7 +1,7 @@
 export default {
     ssr: false,
     router:{
-    //   base: "/e-commerce-client/dist/",
+		// base: "ltesletsflyhigh.github.io",
 		middleware: ['router-log','auth']
     },
 	server: {
@@ -46,10 +46,10 @@ export default {
 	],
 	auth: {
 		redirect: {
-			login: '/login',
-			logout: '/',
-			callback: '/login',
-			home: '/'
+			// login: '/login',
+			// logout: '/',
+			// callback: '/login',
+			// home: '/'
 		  },
 		strategies: {
 			local: {
