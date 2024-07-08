@@ -1,10 +1,9 @@
-const countdown = new Date('2023-06-27').setHours(23, 59, 0, 0);;
+const countdown = new Date('2023-07-9').setHours(23, 59, 0, 0);;
 
 
 
 // ** get the time totals, return them
 function getTimeRemaining(countdown) {
-	console.log(countdown);
   const now = new Date();
   const diff = countdown - now;
 

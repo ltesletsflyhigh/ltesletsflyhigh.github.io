@@ -1,4 +1,9 @@
+require('dotenv').config()
 export default {
+	publicRuntimeConfig: {
+		ID_ADMIN: process.env.ID_ADMIN,
+		SOCKETIO_URL: process.env.SOCKETIO_URL,
+	  },
     ssr: false,
     router:{
 		// base: "ltesletsflyhigh.github.io",
@@ -95,13 +100,17 @@ export default {
 
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 	buildModules: [
-		['@nuxtjs/dotenv'],
 		'@nuxtjs/tailwindcss',
+		'@nuxtjs/google-analytics'
 	],
-
+	googleAnalytics: {
+		// Options
+		id: 'G-EG6K6YHNMT'
+	  },
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
 		'@nuxtjs/axios',
+		'@nuxtjs/dotenv',
 		'@nuxtjs/auth-next',
 	],
 
